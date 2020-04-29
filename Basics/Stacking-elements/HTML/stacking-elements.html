@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>Template</title>
+<style type="text/css">
+/* =============== GENERAL FIXES ========================*/
+* {
+	-webkit-text-size-adjust: none;
+}
+body, table, td, a {
+	-ms-text-size-adjust: 100% !important;
+	-webkit-text-size-adjust: 100% !important;
+}
+table, td {
+	border-spacing: 0 !important;
+	mso-table-lspace: 0pt !important;
+	mso-table-rspace: 0pt !important;
+	border-collapse: collapse !important;
+}
+img {
+	-ms-interpolation-mode: bicubic;
+	border: 0;
+	height: auto;
+	line-height: 100%;
+	outline: none;
+	text-decoration: none;
+}
+.ExternalClass * {
+	line-height: 100%
+}
+body {
+	height: 100% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	width: 100% !important;
+}
+/* =============== CUSTOM DESKTOP STYLES ========================*/
+.mobile-address a, .mobile-address span, .FooterColumn a, .FooterColumn span {
+	text-decoration: none !important;
+	color: inherit !important;
+	border: none !important;
+}
+/* =============== iOS BLUE LINKS ========================*/
+a[x-apple-data-detectors] {
+	color: inherit !important;
+	text-decoration: none !important;
+	font-size: inherit !important;
+	font-family: inherit !important;
+	font-weight: inherit !important;
+	font-height: inherit !important;
+}
+/* =============== GMAIL BLUE LINKS ========================*/	
+u + #body a {
+	color: inherit !important;
+	text-decoration: none !important;
+	font-size: inherit !important;
+	font-family: inherit !important;
+	font-weight: inherit !important;
+	font-height: inherit !important;
+}
+/* =============== SAMSUNG BLUE LINKS ========================*/	
+#MessageViewBody a {
+	color: inherit !important;
+	text-decoration: none !important;
+	font-size: inherit !important;
+	font-family: inherit !important;
+	font-weight: inherit !important;
+	font-height: inherit !important;
+}
+
+/* ============== MOBILE STYLES =========================*/
+@media only screen and (max-width: 600px) {
+/* =============== GENERAL STYLES ========================*/
+body {
+	min-width: 320px;
+	margin: 0;
+}
+.hide-m {
+	display: none !important;
+}
+.show-mobile {
+	display: block !important;
+	overflow: visible !important;
+	width: auto !important;
+	max-height: inherit !important;
+}
+.no-float {
+	float: none !important;
+}
+.no-border {
+	border: none !important;
+}
+.height-auto {
+	height: auto !important;
+}
+.block {
+	display: block !important;
+}
+.inline {
+	display: inline-block !important;
+}
+.resize-image {
+	width: 100%;
+	height: auto;
+}
+.center-image {
+	display: block;
+	margin: 0 auto;
+}
+.text-left {
+	text-align: left !important;
+}
+.text-center {
+	text-align: center !important;
+}
+.text-right {
+	text-align: right !important;
+}
+.font-14 {
+	font-size: 14px !important;
+	line-height: 16px !important;
+}
+.font-16 {
+	font-size: 16px !important;
+	line-height: 18px !important;
+}
+.font-18 {
+	font-size: 18px !important;
+	line-height: 20px !important;
+}
+.font-20 {
+	font-size: 20px !important;
+	line-height: 22px !important;
+}
+.font-22 {
+	font-size: 22px !important;
+	line-height: 24px !important;
+}
+.font-24 {
+	font-size: 24px !important;
+	line-height: 26px !important;
+}
+.font-26 {
+	font-size: 26px !important;
+	line-height: 28px !important;
+}
+.font-28 {
+	font-size: 28px !important;
+	line-height: 30px !important;
+}
+.font-30 {
+	font-size: 30px !important;
+	line-height: 32px !important;
+}
+.font-34 {
+	font-size: 34px !important;
+	line-height: 36px !important;
+}
+.font-37 {
+	font-size: 37px !important;
+	line-height: 39px !important;
+}
+.font-40 {
+	font-size: 40px !important;
+	line-height: 42px !important;
+}
+.font-44 {
+	font-size: 44px !important;
+	line-height: 46px !important;
+}
+.font-47 {
+	font-size: 47px !important;
+	line-height: 49px !important;
+}
+.pad-0 {
+	padding-top: 0px !important;
+	padding-right: 0px !important;
+	padding-bottom: 0px !important;
+	padding-left: 0px !important;
+}
+.pad-t-0 {
+	padding-top: 0 !important;
+}
+.pad-r-0 {
+	padding-right: 0 !important;
+}
+.pad-b-0 {
+	padding-bottom: 0 !important;
+}
+.pad-l-0 {
+	padding-left: 0 !important;
+}
+.pad-t-5 {
+	padding-top: 5px !important;
+}
+.pad-t-10 {
+	padding-top: 10px !important;
+}
+.pad-t-15 {
+	padding-top: 15px !important;
+}
+.pad-t-20 {
+	padding-top: 20px !important;
+}
+.pad-b-5 {
+	padding-bottom: 5px !important;
+}
+.pad-b-10 {
+	padding-bottom: 10px !important;
+}
+.pad-b-15 {
+	padding-bottom: 15px !important;
+}
+.pad-b-20 {
+	padding-bottom: 20px !important;
+}
+.pad-10-10 {
+	padding-top: 10px !important;
+	padding-right: 10px !important;
+	padding-bottom: 10px !important;
+	padding-left: 10px !important;
+}
+.pad-10-20 {
+	padding-top: 10px !important;
+	padding-right: 20px !important;
+	padding-bottom: 10px !important;
+	padding-left: 20px !important;
+}
+.pad-20-10 {
+	padding-top: 20px !important;
+	padding-right: 10px !important;
+	padding-bottom: 20px !important;
+	padding-left: 10px !important;
+}
+.pad-20-20 {
+	padding-top: 20px !important;
+	padding-right: 20px !important;
+	padding-bottom: 20px !important;
+	padding-left: 20px !important;
+}
+.pad-sides-0 {
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+}
+.pad-sides-10 {
+	padding-right: 10px !important;
+	padding-left: 10px !important;
+}
+.pad-sides-20 {
+	padding-right: 20px !important;
+	padding-left: 20px !important;
+}
+.w100 {
+	width: 100% !important;
+	min-width: initial !important;
+}
+.w90 {
+	width: 90% !important;
+	min-width: initial !important;
+}
+.w80 {
+	width: 80% !important;
+	min-width: initial !important;
+}
+.w70 {
+	width: 70% !important;
+	min-width: initial !important;
+}
+.w60 {
+	width: 60% !important;
+	min-width: initial !important;
+}
+.w50 {
+	width: 50% !important;
+	min-width: initial !important;
+}
+/* ======================================= CUSTOM MOBILE STYLES */
+}
+</style>
+</head>
+<body>
+<!-- WRAPPER -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" align="center" bgcolor="#dedede" style="width: 100%; background-color: #dedede;">
+  <tbody>
+    <tr>
+      <td class="pad-sides-20" align="center" style="padding-top: 20px; padding-bottom: 20px;">
+        <table class="w100" border="0" cellpadding="0" cellspacing="0" width="600" align="center" bgcolor="#ffffff" style="width: 600px; background-color: #ffffff;">
+          <tbody>
+            <tr>
+              <td class="pad-sides-20" align="center" style="font-family: Arial, Tahoma, sans-serif; font-size: 12px; line-height: 14px; font-weight: normal; color: #333333; padding-top: 20px; padding-bottom: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, dolorem. <a href="http://#" style="text-decoration: underline; color: #4b70fc;" target="_blank">Lorem ipsum dolor.</a></td>
+            </tr>
+            <tr>
+              <td align="center" style="font-size: 0px; line-height: 0px; padding-bottom: 20px;">
+                <table class="w100" border="0" cellpadding="0" cellspacing="0" width="600" align="center" bgcolor="#2c419a" style="width: 600px; background-color: #2c419a;">
+                  <tbody>
+                    <tr>
+                      <td class="pad-sides-20" align="center" style="font-family: Arial, Tahoma, sans-serif; font-size: 25px; line-height: 27px; font-weight: bold; color: #ffffff; padding-top: 20px; padding-bottom: 20px;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" style="font-family: Arial, Tahoma, sans-serif; font-size: 16px; line-height: 19px; font-weight: normal; color: #333333; padding-left: 20px; padding-right: 20px; padding-bottom: 20px;"></td>
+            </tr>
+            <!--Simple Body Copy-->            <!--End Body Copy-->            <!--Divider-->
+            <tr>
+              <td align="center" style="width: 560px; margin: 0 auto; border-top: 1px dotted #000000; padding-bottom: 20px;"></td>
+            </tr>
+            <!--Body Copy and Right image-->
+            <tr>
+              <td align="center" class="pad-sides-20" style="padding-bottom: 20px;">
+                <table width="560" border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td align="center">
+						<!--Table Left Element-->
+                        <table align="left" width="250" border="0" cellspacing="0" cellpadding="0" class="w100">
+                          <tbody>
+                            <tr>
+                              <td width="250" height="250" align="center" valign="top" bgcolor="#00A312" style="vertical-align: middle; font-size: 80px; color: #ffffff; font-weight: bold;">1</td>
+                            </tr>
+                          </tbody>
+                        </table>
+						<!--End Table Left Element-->
+						  
+						<!--Table Right Element-->  
+                        <table align="right" width="250" border="0" cellspacing="0" cellpadding="0" class="w100">
+                          <tbody>
+                            <tr>
+                              <td width="250" height="250" align="center" valign="top" bgcolor="#041FB2" style="vertical-align: middle; font-size: 80px; color: #ffffff;">2</td>
+                            </tr>
+                          </tbody>
+                        </table>
+						<!--End Table Right Element-->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <!--Divider-->
+            <tr>
+              <td align="center" style="width: 560px; margin: 0 auto; border-top: 1px dotted #000000; padding-bottom: 20px;"></td>
+            </tr>
+            <!--Body Copy and Left image-->            <!--Divider-->            <!--End Body Copy-->
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td align="left" style="font-size: 0px; line-height: 0px;"><!--Tracking Pixel Code--></td>
+    </tr>
+  </tbody>
+</table>
+<!-- /WRAPPER -->
+</body>
+</html>
